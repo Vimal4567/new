@@ -1,0 +1,150 @@
+:root{
+    --webkit-animation:var(--webkit-animation)
+}
+.new {
+    margin:0;
+    padding:0;
+    font-family : Helvetica;
+    font-weight : 300;
+    font-size : 70px;
+    
+  }
+  header {
+    padding:700px;
+    border: 2px dashed #111111;
+    margin : 10px;;
+    border-radius : 7px;
+  }
+  .hello {
+    position : relative;
+    color: red;
+    -webkit-animation :hello 5s 1s  linear infinite alternate,cominghello 1s;
+    
+  }
+  
+  
+  .htmlcss {
+    position : relative;
+    color : rgb(228, 24, 24);
+    left: 10px;
+    right: 20px;
+    -webkit-animation : 
+      htmlcss 5s 1s linear infinite alternate,
+      cominghtmlcss 1s;
+  }
+  /*Anim declarations*/
+  /*@-webkit-keyframes cominghello {
+    0% { top: -10px; left : -10px; opacity : 0 }
+    100% { top: 0px; left : -50px; opacity: 1}
+  }*/
+  @-webkit-keyframes hello {
+    from { left:-390px; color: rgb(126, 160, 117); }
+    to { left: 390px; color : rgb(130, 18, 243); }
+  }
+  /*@-webkit-keyframes cominghtmlcss {
+    from { right:50px; top: 100px; }
+    to { left: 10px; top: 0; }
+  }*/
+  @-webkit-keyframes our {
+    from { left:-390px; color: rgb(193, 13, 202); }
+    to { left: 390px; color : rgb(233, 73, 5); }
+  }
+  @-webkit-keyframes htmlcss {
+    from { left:390px; color: orange; }
+    to { left: -390px; color : rgb(4, 255, 67); }
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    background: linear-gradient(15deg,rgb(255, 251, 246),green,white);
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 0px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+#gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit:fill;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 1.6s;
+}
+
+#gallery img:hover {
+    transform: scale(1.50);
+    transition: 0.6s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#info, #contact {
+    padding: 30px;
+    background: linear-gradient(green,yellow);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+.everyone{
+    flex-wrap: wrap;
+    display: flexbox;
+    text-decoration: none;
+    color: blue;
+    text-align: right;
+    padding-left: 20px;
+    
+    
+}
+
+.everyone:hover{
+    color: black;
+    transition: all;
+}
